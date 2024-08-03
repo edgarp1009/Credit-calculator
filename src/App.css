@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("https://png.pngtree.com/background/20230629/original/pngtree-illustration-of-a-money-coin-with-bank-icon-in-3d-rendering-picture-image_4090177.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.header {
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 50px;
+
+  .title {
+    text-align: center;
+    color: white;
+    animation: fadeIn 1s ease-in-out    forwards;
+  }
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 200px;
+  gap: 20px;
+
+  background-color: wheat;
+  border-radius: 15px;
+  margin: 0 auto;
+  margin-top: 30px;
+
+  animation: fadeIn 1s ease-in-out    forwards;
+
+  form {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  }
+
+  input {
+    height: 30px;
+    padding: 5px;
+  }
+  select {
+    height: 30px;
+  }
+  
+  .calculate-button {
+    height: 40px;
+    width: 80%;
+  }
+}
+
+.fill-champs {
+  width: 400px;
+  background-color: azure;
+  margin: 0 auto;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.fill-champs-text {
+  font-size: 1.2rem;
+}
+
+.results {
+  width: 400px;
+  height: 200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  background-color: antiquewhite;
+  border-radius: 15px;
+  animation: fadeIn 1s ease-in-out    forwards;
+  transition: opacity 1s ease-in-out;
+
+  h2 {
+    margin-bottom: 10px;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.errorText {
+  color: red;
+}
