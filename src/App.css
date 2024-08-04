@@ -2,6 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
+}
+
+#root {
+  width: 100%;
+  height: 100%;
 }
 
 body {
@@ -10,10 +16,13 @@ body {
   background-size: cover;
   background-position: center;
   height: 100vh;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .header {
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   margin: 0 auto;
   margin-top: 50px;
 
@@ -28,6 +37,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  width: 100%;
 }
 
 .calculator {
@@ -35,7 +45,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 400px;
+  width: 90%;
+  max-width: 400px;
   height: 200px;
   gap: 20px;
 
@@ -49,15 +60,18 @@ body {
   form {
     display: flex;
     justify-content: space-between;
+    gap: 5px;
     width: 80%;
   }
 
   input {
     height: 30px;
+    min-width: 100px;
     padding: 5px;
   }
   select {
     height: 30px;
+    min-width: 100px;
   }
   
   .calculate-button {
